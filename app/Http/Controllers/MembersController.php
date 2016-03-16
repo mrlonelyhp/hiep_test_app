@@ -13,7 +13,7 @@ class MembersController extends Controller
         return view('pages.members.index');
     }
 
-    public function getMember()
+    public function getMemberList()
     {
         return Member::all()->toArray();
     }
@@ -24,8 +24,8 @@ class MembersController extends Controller
         $member->name = $request->input('name');
         $member->address = $request->textarea('address');
         $member->age = $request->input('age');
-        $member->photo = $request->img('photo');
         $member->joined_at = $request->input('joined_at');
+        $member->photo = $request->img('photo');
         $member->save();
         return 'Member record successfully created with id ' . $member->id;
     }

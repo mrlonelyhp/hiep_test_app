@@ -12,7 +12,7 @@
 */
 
 Route::get('members/{id?}', 'MembersController@index');
-Route::get('get_members', 'MembersController@getMember');
+Route::get('get_members', 'MembersController@getMemberList');
 Route::get('members/{id}', 'MembersController@show');
 Route::post('members', 'MembersController@store');
 Route::post('members/{id}', 'MembersController@update');
