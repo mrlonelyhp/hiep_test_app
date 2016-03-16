@@ -1,0 +1,26 @@
+//-----MY OWN CUSTOM CSS-----
+
+#header h1 {
+  margin: 40px 0;
+}
+
+#content .btn-toolbar {
+  margin-bottom: 20px;
+  .btn-group > a {
+    margin-left: 5px;
+    border-radius: 0;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+img.form-control {
+  height: auto;
+}
+
+.table {
+  & th, & td {
+    text-align: center;
+  }
+}

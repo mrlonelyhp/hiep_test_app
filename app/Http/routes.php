@@ -11,9 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('members/{id?}', 'MembersController@index');
+Route::get('get_members', 'MembersController@getMember');
+Route::get('members/{id}', 'MembersController@show');
+Route::post('members', 'MembersController@store');
+Route::post('members/{id}', 'MembersController@update');
+Route::delete('members/{id}', 'MembersController@destroy');
 
 /*
 |--------------------------------------------------------------------------
@@ -27,5 +30,5 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+    //Route::resource('members', 'MembersController');
 });
