@@ -76,9 +76,8 @@ elixir(function (mix) {
         'app.scss'
     ], 'public/assets/css');
     mix.scripts([
-        "angular.js",
-        "jquery.min.js",
-        "bootstrap.min.js",
+        "jquery.js",
+        "bootstrap.js",
         "app.js",
         "members.js",
         "custom.js"

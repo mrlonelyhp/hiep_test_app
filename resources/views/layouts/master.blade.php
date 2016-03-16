@@ -4,6 +4,8 @@
     <title>@yield('title')</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/app.css') }}">
+    <script src="{{ asset('assets/js/angular.js') }}"></script>
+    <script src="{{ asset('assets/js/all.js') }}"></script>
 </head>
 <body>
 <div class="container">
@@ -15,9 +17,7 @@
     <!--#header-->
 
     <div id="content">
-        <div ng-controller="MembersController">
-            @yield('content')
-        </div>
+        @yield('content')
     </div>
     <!--#content-->
 
@@ -27,6 +27,6 @@
     <!--#footer-->
 
 </div>
-<script src="{{ asset('assets/js/all.js') }}"></script>
+
 </body>
 </html>
